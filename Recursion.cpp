@@ -15,8 +15,15 @@ vector<int> printNos(int x) {
     vector <int> ans = printNos(x-1);
     ans.push_back(x);
     return ans;
-
-}
+};
+// Print n times (coding ninja)
+vector<string> printNTimes(int n) {
+	if(n==0)
+		return {};
+	vector <string> result = printNTimes(n-1);
+	result.push_back("Coding Ninjas");
+	return result;
+};
 int main(){
 	int n;
 	cin>>n;
