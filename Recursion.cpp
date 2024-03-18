@@ -24,6 +24,13 @@ vector<string> printNTimes(int n) {
 	result.push_back("Coding Ninjas");
 	return result;
 };
+//N to 1 without loop (Coding Ninja)
+vector<int> printNos(int x) {
+    if(x==1)
+      return {1};
+    cout<<x<<" ";
+    return printNos(x-1);
+}
 int main(){
 	int n;
 	cin>>n;
