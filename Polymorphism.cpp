@@ -2,10 +2,10 @@
 using namespace std;
 class car{
     public:
-    void start(){
+    virtual void start(){
         cout<<"car started"<<"\n";
     }
-    void stop(){
+    virtual void stop(){
         cout<<"car stopped"<<"\n";
     }
 };
