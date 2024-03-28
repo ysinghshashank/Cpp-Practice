@@ -31,6 +31,13 @@ vector<int> printNos(int x) {
     cout<<x<<" ";
     return printNos(x-1);
 }
+// Sum Of First N Numbers (Coding Ninja)
+long long sumFirstN(long long n) {
+    if(n==1)
+        return 1;
+    return sumFirstN(n-1)+n;
+}
+
 int main(){
 	int n;
 	cin>>n;
