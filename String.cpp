@@ -40,7 +40,6 @@ int main(){
     }else{
         cout<<-1;
     }
-
     //pointer
     int a;
     cin>>a;
